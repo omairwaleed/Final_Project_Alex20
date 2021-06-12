@@ -61,19 +61,19 @@ Discarded input sections
                 0x00000000       0x3a build/default/production/kit.o
  .text.spi_receive
                 0x00000000        0x8 build/default/production/kit.o
+ .text.led1_on  0x00000000        0x4 build/default/production/kit.o
+ .text.led1_OFF
+                0x00000000        0x4 build/default/production/kit.o
+ .text.led0_OFF
+                0x00000000        0x4 build/default/production/kit.o
  .text.relay_init
                 0x00000000        0x4 build/default/production/kit.o
  .text.relay_on
                 0x00000000        0x4 build/default/production/kit.o
- .text.led1_on  0x00000000        0x4 build/default/production/kit.o
  .text.led2_on  0x00000000        0x4 build/default/production/kit.o
  .text.buzzer_init
                 0x00000000        0x4 build/default/production/kit.o
  .text.buzzer_on
-                0x00000000        0x4 build/default/production/kit.o
- .text.led0_OFF
-                0x00000000        0x4 build/default/production/kit.o
- .text.led1_OFF
                 0x00000000        0x4 build/default/production/kit.o
  .text.led2_OFF
                 0x00000000        0x4 build/default/production/kit.o

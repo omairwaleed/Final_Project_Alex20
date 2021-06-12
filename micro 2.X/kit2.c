@@ -84,7 +84,18 @@ char spi_receive(){
     return SPDR;
 }
 
+void led1_on() {
+    //DEFINE DATA (HIGH ,LOW)
+    PORTC |= (1 << 7);
+}
 
+void led0_OFF() {
+    PORTC &= ~(1 << 2);
+}
+
+void led1_OFF() {
+    PORTC &= ~(1 << 7);
+}
 //driver for microcontroller but not used in this project
 void relay_init() {
     DDRA |= (1 << relay);
@@ -94,10 +105,7 @@ void relay_on() {
     PORTA |= (1 << relay);
 }
 
-void led1_on() {
-    //DEFINE DATA (HIGH ,LOW)
-    PORTC |= (1 << 7);
-}
+
 
 void led2_on() {
     //DEFINE DATA (HIGH ,LOW)
@@ -112,13 +120,7 @@ void buzzer_on() {
     PORTA |= (1 << buzzer);
 }
 
-void led0_OFF() {
-    PORTC &= ~(1 << 2);
-}
 
-void led1_OFF() {
-    PORTC &= ~(1 << 7);
-}
 
 void led2_OFF() {
     PORTD &= ~(1 << 3);
